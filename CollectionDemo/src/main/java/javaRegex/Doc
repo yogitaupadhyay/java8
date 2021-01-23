@@ -1,0 +1,15 @@
+java.util.regex
+	  1.Pattern(C)
+	  2.MatchResult(I)
+	             |_____ Matcher(C)
+	  3..PatternSyntax(C)
+	  
+	  
+	  
+ order of learning 
+	  RegexDemo1
+	  RegexDemo1
+	  RegexMetaCharacter
+	  RegexBoundry
+	 
+  

@@ -1,0 +1,22 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMetaCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// character .
+		Pattern p=Pattern.compile("he.lo",Pattern.CASE_INSENSITIVE);
+		Matcher m=p.matcher("heulO");
+		System.out.println(m.matches());
+		
+		Matcher m1=p.matcher("heklO");
+		System.out.println(m1.matches());
+		
+		
+	}
+
+}

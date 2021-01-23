@@ -1,0 +1,27 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexQuantifier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// words starting with t
+		System.out.println("+++++++++++++++++++++1++++++++++++++++++++++++");
+		Pattern hellop = Pattern.compile("hello*");
+		
+		Matcher hellom = hellop.matcher("hell");
+		System.out.println(hellom.matches());
+		
+		Matcher hellom1 = hellop.matcher("hello");
+		System.out.println(hellom1.matches());
+		
+		Matcher hellom2 = hellop.matcher("helloooooooooooooooo");
+		System.out.println(hellom2.matches());
+		
+		System.out.println();
+
+	}
+
+}

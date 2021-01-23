@@ -1,0 +1,19 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo2 {
+
+	
+	//word boundaries and matcher class methods
+	public static void main(String[] args) {
+	Pattern p=	Pattern.compile("\\bcat\\b");
+	Matcher m=p.matcher("pushy cat pusy cat where have you been what did you do there ,pusy cat pusy cat");
+		while(m.find()) {
+			System.out.println("start= "+m.start()+"end ="+m.end());
+		}
+		
+	}
+
+}

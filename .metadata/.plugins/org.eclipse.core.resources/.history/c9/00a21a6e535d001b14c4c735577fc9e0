@@ -1,0 +1,30 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexBoundry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+       // ^  Beginning of line 
+		System.out.println("+++++++++++++++++++++1++++++++++++++++++++++++");
+		Pattern lb = Pattern.compile("^");
+		Matcher m = lb.matcher("hi mam\n myself yogita");
+		while(m.find()) {
+			System.out.println(m.start()+ " -> "+m.end());
+		}
+		
+		//check whether string starts with https://
+		Pattern urlpat= Pattern.compile("^https://");
+		Matcher url = urlpat.matcher("https://www.nitrr.ac.in");
+		while(url.find()) {
+			System.out.println(url.start()+ " -> "+url.end());
+		}
+
+		
+
+	}
+
+}

@@ -1,0 +1,7 @@
+java.util.regex
+	  1.Pattern(C)
+	  2.MatchResult(I)
+	             |_____ Matcher(C)
+	  3..PatternSyntax(C)
+	 
+  

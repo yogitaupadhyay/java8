@@ -1,0 +1,24 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexBoundry {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       // ^  Beginning of line 
+		System.out.println("+++++++++++++++++++++1++++++++++++++++++++++++");
+		Pattern lb = Pattern.compile("^");
+		Matcher m = lb.matcher("hi mam\n myself yogita");
+		while(m.find()) {
+			System.out.println(m.start()+ " -> "+m.end()));
+		}
+		
+
+		Matcher gramper1 = great1.matcher("gr&");
+		System.out.println("gr&1 = " + gramper1.matches());
+
+	}
+
+}

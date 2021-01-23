@@ -1,0 +1,75 @@
+package javaRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMetaCharacter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// character .
+		Pattern p=Pattern.compile("he.lo",Pattern.CASE_INSENSITIVE);
+		Matcher m=p.matcher("heulO");
+		System.out.println(m.matches());
+		
+		Matcher m1=p.matcher("heklO");
+		System.out.println(m1.matches());
+		
+		//[vw]-any one of these
+		
+		Pattern p2=Pattern.compile("ja[vw]a",Pattern.CASE_INSENSITIVE);
+		Matcher m2=p2.matcher("java");
+		System.out.println("java= "+m2.matches());
+		
+		Matcher m3=p2.matcher("jawa");
+		System.out.println("jawa = "+m3.matches());
+		
+		Matcher m4=p2.matcher("jata");
+		System.out.println("jata = "+m4.matches());
+		
+		//[a-k] -range of character
+		
+		Pattern aTOk=Pattern.compile("ja[a-k]a",Pattern.CASE_INSENSITIVE);
+		Matcher java=aTOk.matcher("java");
+		System.out.println("java= "+java.matches());
+		
+		Matcher jaka=aTOk.matcher("jaka");
+		System.out.println("jaka = "+jaka.matches());
+		
+		//[a-zA-Z]
+		
+		Pattern aTOz=Pattern.compile("[a-zA-Z]");
+		Matcher a=aTOz.matcher("a");
+		System.out.println("a= "+a.matches());
+		
+		Matcher H=aTOz.matcher("H");
+		System.out.println("H = "+H.matches());
+		
+		Matcher four=aTOz.matcher("4");
+		System.out.println("four = "+four.matches());
+		
+		//[a-zA-Z0-9]
+		
+				Pattern alphanum=Pattern.compile("[a-zA-Z]");
+				Matcher n=alphanum.matcher("n");
+				System.out.println("n= "+n.matches());
+				
+				Matcher Y=alphanum.matcher("Y");
+				System.out.println("Y = "+Y.matches());
+				
+				Matcher two=alphanum.matcher("2");
+				System.out.println("two = "+two.matches());
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
