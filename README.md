@@ -1,4 +1,4 @@
 # Advance java
-java8 features 
-Regex in java
-Runnable
+* java8 features 
+* Regex in java
+* Runnable
