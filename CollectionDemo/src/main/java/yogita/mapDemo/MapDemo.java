@@ -2,6 +2,7 @@ package yogita.mapDemo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -15,6 +16,7 @@ public class MapDemo {
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+//		LinkedHashSet<E>
 		Map<Integer,String>map1=new HashMap<>();
 		map1.put(1, "banana");
 		map1.put(2, "yello");

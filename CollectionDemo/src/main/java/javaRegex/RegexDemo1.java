@@ -7,6 +7,7 @@ public class RegexDemo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		//way 1
 		Pattern pattern=Pattern.compile(".s");
 		Matcher matcher=pattern.matcher("as");
@@ -17,6 +18,9 @@ public class RegexDemo1 {
 
 		//way3-static boolean matches(String regex, CharSequence input)-pattern class
 		System.out.println(Pattern.matches("h.", "hi"));
+		String h="heloe dear";
+		String k=h.substring(3,5);
+		
 				
 	}
 

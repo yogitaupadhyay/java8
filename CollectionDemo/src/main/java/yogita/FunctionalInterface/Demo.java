@@ -1,5 +1,8 @@
 package yogita.FunctionalInterface;
 
+import java.util.*;
+
+
 interface hello {
 	void sayHello();
 }
@@ -14,7 +17,8 @@ public class Demo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		HashSet<Integer>set=new HashSet<Integer>();
+//		HashMap<Integer>map=new HashMap<Integer>(16);
 		helloImpl h = new helloImpl();
 		h.sayHello();
 

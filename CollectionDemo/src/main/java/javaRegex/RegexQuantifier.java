@@ -8,6 +8,9 @@ public class RegexQuantifier {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+//		A quantifier defines how often an element can occur. 
+//		The symbols ?, *, + and {} are qualifiers.
+		
 		// *-matches 0 or more character
 		System.out.println("+++++++++++++++++++++1++++++++++++++++++++++++");
 		Pattern hellop = Pattern.compile("hello*");

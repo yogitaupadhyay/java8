@@ -7,6 +7,9 @@ public class RegexMetaCharacter {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		
+		
 
 		// character .
 		System.out.println("++++++++++++++++++++++1+++++++++++++++++++++++");
@@ -77,8 +80,8 @@ public class RegexMetaCharacter {
 		Matcher just4you1 = jFy.matcher("just4you");
 		System.out.println("just4you1 = " + just4you1.matches());
 
-		Matcher justforyou1 = jFy.matcher("justforyou");
-		System.out.println("justforyou1 = " + justforyou1.matches());
+		Matcher justforyou2 = jFy.matcher("justfyou");
+		System.out.println("justfyou = " + justforyou2.matches());
 
 		Matcher justFyou = jFy.matcher("justFyou");
 		System.out.println("justFyou = " + justFyou.matches());
@@ -89,8 +92,8 @@ public class RegexMetaCharacter {
 		Matcher gr8 = great.matcher("gr8");
 		System.out.println("gr8 = " + gr8.matches());
 
-		Matcher grt = great.matcher("grt");
-		System.out.println("grt = " + grt.matches());
+		Matcher grte = great.matcher("grte");
+		System.out.println("grte = " + grte.matches());
 
 		Matcher grT = great.matcher("grT");
 		System.out.println("grT = " + grT.matches());
