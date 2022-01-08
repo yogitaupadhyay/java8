@@ -1,6 +1,6 @@
 package JAXB_javaObjectToXML.basics;
 
-import java.io.File;
+
 import java.io.PrintWriter;
 
 import javax.xml.bind.JAXBContext;
